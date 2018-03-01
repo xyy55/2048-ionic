@@ -1,3 +1,135 @@
 page-home {
-
+.scores {
+    margin: 20px auto;
+    width: 320px;
+    text-align: center;
+    background-color: rgba(187,255,255,0.4);
+    border-radius: 10px;
+}
+.scores div{
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 10px;
+}
+.cell {
+    width: 72px;
+    height: 72px;
+    background-color: rgba(187,255,255,0.4);
+    display: inline-block;
+    position: absolute;
+    border: 4px solid #9a9a95;
+    z-index: 1;
+}
+#container {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+}
+.game {
+    margin: 0 auto;
+    background: #9a9a95;
+    padding: 4px;
+    border-radius: 3px;
+    width: 320px;
+    height: 320px;
+    z-index: 0;
+}
+.box {
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+    position: absolute;
+    border: 4px solid #9a9a95;
+    z-index: 2;
+}
+p {
+    text-align: center;
+    line-height: 12px;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+.end {
+    position: absolute;
+    margin: 0 auto;
+    background:rgba(0,0,0,0.7);
+    border-radius: 3px;
+    width: 312px;
+    height: 312px;
+    z-index: 3;
+    text-align: center;
+    display: none;
+}
+.end > p {
+   margin: 125px 0 0 0;
+}
+.server {
+    text-align: center;
+    z-index: -2;
+    margin: 340px 0 0 0;
+}
+  .value-2 {
+    background: #FFC43D;
+  }
+  .value-4 {
+    background: #EF476F;
+  }
+  .value-8 {
+    background: #1B9AAA; 
+  }
+  .value-16 {
+    background: #06D6A0; 
+  }
+  .value-32 {
+    background: #f37694;
+  }
+  .value-64 {
+    background: #22c2d6;
+  }
+  .value-128 {
+    background: #17f8be;
+  }
+  .value-256 {
+    background: #ffd470;
+  }
+  .value-512 {
+    background: #eb184a;
+  }
+  .value-1024 {
+    background: #14727e;
+  }
+  .value-2048 {
+    background: #05a47b;
+  }
+  .value-4096 {
+      background: #14727e;
+  }
+  .value-8192 {
+      background: #05a47b;
+  }
+  .new {
+    animation: appear 0.1s;
+    animation-fill-mode: forwards;
+  }
+  .merge {
+    animation: merge 0.1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes appear
+{
+  0% {}
+  50% {transform: scale(0.7,0.7)}
+  100% {transform: scale(1,1)}
+}
+@keyframes merge
+{
+  0% {}
+  50% {transform: scale(1.2,1.2)}
+  100% {transform: scale(1,1)}
+}
+@keyframes mrotate
+{
+    from{transform:rotate(0)}
+    to{transform:rotate(360deg)}
+}
 }
